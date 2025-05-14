@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #d3dff1;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #e2ecfb;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  .logo {
+    font-family: 'MuseoModerno'
+    font-size: 1.5em;
+    color: #2e2f6e;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .nav-menu a:hover {
+    background-color: #2e5e12;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-top: 10px;
+  }
+
+  .hero {
+    margin-top: 20px;
+    background-image: url('https://i.pinimg.com/originals/57/1b/55/571b55cd40a45f933c9deac79d360e5a.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    position: relative;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+  }
+  
+  .hero-content {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    color: white;
+    font-family: 'Segoe UI', cursive;
+  }
+  
+  .hero-content h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    font-family: 'Caveat', cursive;
+  }
+  
+  .portfolio-title {
+    font-size: 2.5em;
+    display: block;
+    letter-spacing: 2px;
+  }
+  
+  .subtitle {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+  
+  .description {
+    background-color: #D0D9E2;
+    background-image: url("asset/Pemandangan3.jpg");
+    padding: 15px;
+    border-radius: 10px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .description h2 {
+    font-size: 1.8em;
+    line-height: 1.4em;
+  }
