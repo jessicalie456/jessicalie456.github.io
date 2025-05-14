@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Segoe UI', sans-serif;
-    background-color: #d3dff1;
+    background-color: #8391A3;
     color: #fff;
 }
 
@@ -28,8 +28,6 @@ body{
   
   .logo {
     font-family: 'MuseoModerno'
-    font-size: 1.5em;
-    color: #2e2f6e;
   }
   
   .nav-menu a {
@@ -40,6 +38,7 @@ body{
     border-radius: 10px;
     font-weight: bold;
     transition: 0.3s;
+    font-size: 18px;
   }
   
   .nav-menu a:hover {
@@ -47,18 +46,20 @@ body{
   }
 
   .nav-menu {
-    display: flex;
-    justify-content: center;
     background-size: cover;
     background-position: center;
+    width: 963px;
+    height: 67px;
     border-radius: 20px;
-    padding: 10px 20px;
-    margin-top: 10px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center; /* Biar teks di tengah vertikal */
+    justify-content: center;
+    background-image: url('asset/Pemandangan4.png');
   }
 
   .hero {
     margin-top: 20px;
-    background-image: url('https://i.pinimg.com/originals/57/1b/55/571b55cd40a45f933c9deac79d360e5a.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 15px;
@@ -105,9 +106,8 @@ body{
   
   .description {
     background-color: #D0D9E2;
-    background-image: url("asset/Pemandangan3.jpg");
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 0%;
     color: #333;
     font-weight: bold;
   }
@@ -116,3 +116,245 @@ body{
     font-size: 1.8em;
     line-height: 1.4em;
   }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #dde6f5;
+  }
+  
+  .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #fff;
+    border-radius: 15px;
+    padding: 40px;
+    margin: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-image: url('asset/pemandangan2.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .about-content {
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+  }
+
+  .about-content p{
+    color: #3C3B55;
+  }
+
+  .about-content h2 {
+    font-size: 36px;
+    color: #4d5c30;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .about-content .intro {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .skills-title {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #dde6f5;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #3C3B55;
+  }
+  
+  .skills {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .skills img {
+    height: 50px;
+  }
+  
+  .photo-frame {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: rotate(-5deg);
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  }
+  
+  .photo {
+    width: 100%;
+    margin: 5px 0;
+    border-radius: 10px;
+  }
+
+  .education-section, .certification-section, .work-section {
+    background-color: #2f2f4f;
+    color: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 40px;
+  }
+  
+  .section-title {
+    background-color: #3e3e60;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .education-item, .work-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e6eff6;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    color: #000;
+  }
+  
+  .certificates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .certificate {
+    background-color: #e6eff6;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 14px;
+  }
+  
+  .work-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  
+  .work-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #e6eff6;
+    color: #000;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .job-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .job-desc {
+    color: #4d5c30;
+  }
+  .education-section,
+  .experience-section,
+  .certificate-section {
+    background-color: #e5e5e5;
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  
+  .edu-box,
+  .experience-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .edu-item,
+  .exp-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .edu-item strong,
+  .exp-item strong {
+    font-size: 1.2em;
+    color: #4A4A4A;
+  }
+  
+  .edu-item p,
+  .exp-item p {
+    color: #7A7A7A;
+  }
+  
+  .certificates {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .cert-item,
+  .cert-item-full {
+    background-color: #4a4a4a;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .cert-item-full {
+    flex-basis: 100%;
+  }
+  
+  /* Styling for "Education" Section in Experience */
+  .experience-section h2 {
+    color: white;
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  /* General Box Style */
+  section {
+    border-radius: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-content {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .photo-frame {
+      max-width: 100%;
+    }
+  
+    .skills {
+      flex-direction: column;
+    }
+  }  
+  
