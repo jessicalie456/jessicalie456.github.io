@@ -27,7 +27,9 @@ body{
   }
   
   .logo {
-    font-family: 'MuseoModerno'
+    font-family: 'MuseoModerno';
+    font-size: 30px;
+    color: #3C3B55;
   }
   
   .nav-menu a {
@@ -68,6 +70,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url('asset/Pemandangan3.jpg');
   }
   
   .hero::after {
@@ -106,10 +109,13 @@ body{
   
   .description {
     background-color: #D0D9E2;
-    padding: 15px;
+    padding: 10px;
     border-radius: 0%;
     color: #333;
     font-weight: bold;
+    opacity: 40%;
+    max-width: 100%;
+    
   }
   
   .description h2 {
@@ -201,12 +207,29 @@ body{
   }
 
   .education-section, .certification-section, .work-section {
-    background-color: #2f2f4f;
+    background-color: #3C3B55;
     color: white;
     border-radius: 15px;
     padding: 30px;
     margin: 40px;
   }
+
+  .edu-title{
+    background-color: #3C3B55;
+    border-radius: 24px 24px 24px 24px;
+    text-align: center;
+  }
+
+  .cer-title{
+    text-align: center;
+  }
+  
+  .exp-title{
+    background-color: #3C3B55;
+    border-radius: 24px 24px 24px 24px;
+    text-align: center;
+  }
+  
   
   .section-title {
     background-color: #3e3e60;
@@ -267,15 +290,26 @@ body{
   .job-desc {
     color: #4d5c30;
   }
-  .education-section,
-  .experience-section,
-  .certificate-section {
-    background-color: #e5e5e5;
+  
+  .education-section {
+    background-color: #ECECEC;
     padding: 40px;
     margin: 20px 0;
     border-radius: 10px;
   }
-  
+
+  .certificate-section {
+    background-color: #3C3B55;
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  .experience-section {
+    background-color: #272636;
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
   .edu-box,
   .experience-box {
     display: flex;
@@ -323,38 +357,129 @@ body{
     flex-basis: 100%;
   }
   
-  /* Styling for "Education" Section in Experience */
-  .experience-section h2 {
-    color: white;
-    background-color: #333;
-    padding: 10px;
+  
+  .pjbl-title {
     text-align: center;
-    border-radius: 8px;
+    background-color: #ffff;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #3C3B55;
   }
   
-  /* General Box Style */
-  section {
+  .project-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .project-text {
+    flex: 2;
+    font-size: 24px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+    color: #000;
+    font-weight: bold;
+  }
+
+  .exp-role {
+    background-color: #a7d0d8;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: #1f1f1f;
+  }
+
+  .experience-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  
+  .pjbl-container{
+    margin: 40px auto;
+    background-color: #ccd6dd;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .project-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .project-image img {
+    width: 100%;
     border-radius: 10px;
   }
   
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .about {
-      flex-direction: column;
-      align-items: center;
-    }
+  .caption {
+    font-weight: bold;
+    margin-top: 5px;
+  }
   
-    .about-content {
-      max-width: 100%;
-      margin-bottom: 20px;
-    }
+  .quote-section {
+    background-image: url('asset/Pemandangan2.jpg'); 
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 30px;
+  }
   
-    .photo-frame {
-      max-width: 100%;
-    }
+  .author {
+    margin-top: 10px;
+    font-weight: bold;
+  }
   
-    .skills {
-      flex-direction: column;
-    }
-  }  
+  .footer {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
   
+  .profile img {
+    width: 100px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .thank-you {
+    flex: 1;
+  }
+  
+  .thank-you h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  .thank-you p {
+    margin: 5px 0;
+    text-align: center;
+    color: #000;
+  }
+  
+  .contacts p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #000;
+  }
+  
+  .contacts img{
+    width: 1%;
+    justify-content: space-between;
+    align-items: center;
+  }
