@@ -55,7 +55,7 @@ body{
     border-radius: 20px;
     margin: 20px auto;
     display: flex;
-    align-items: center; /* Biar teks di tengah vertikal */
+    align-items: center; 
     justify-content: center;
     background-image: url('asset/Pemandangan4.png');
   }
@@ -109,13 +109,15 @@ body{
   
   .description {
     background-color: #D0D9E2;
-    padding: 10px;
+    padding: 10px 70px;
     border-radius: 0%;
     color: #333;
     font-weight: bold;
     opacity: 40%;
-    max-width: 100%;
-    
+    max-width: 200%;
+    height: 100%;
+    width: 100%;
+    padding: 20px 0;
   }
   
   .description h2 {
@@ -189,21 +191,19 @@ body{
   }
   
   .photo-frame {
-    width: 10%;
+    width: 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
     transform: rotate(-5deg);
     background: white;
     padding: 15px;
-    border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
   }
   
   .photo {
     width: 100%;
     margin: 5px 0;
-    border-radius: 10px;
   }
 
   .education-section, .certification-section, .work-section {
